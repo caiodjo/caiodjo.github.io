@@ -22,6 +22,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 /* HEADER */
 header{
@@ -45,11 +49,31 @@ nav{
     font-weight: 500;
     height: 100%;
 }
-.nav-bar li{
+.nav-bar a{
     margin-left: 2rem;
     margin-top: 3vh;
 }
 #sobre-mim{
     border-bottom: 3px solid black;
     font-weight: 700;
+}
+#background{
+    background-color: rgb(143, 143, 143);
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    background-color:beige;
+}
+.sobreMim{
+    padding: 2rem;
+}
+.foto-profile{
+    width: 1000px;
+    margin-left: 3rem;
+}
+.foto-profile img{
+    border-radius: 50%;
 }
