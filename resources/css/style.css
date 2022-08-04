@@ -42,7 +42,7 @@ nav{
 .nav-bar{
     display: flex;
     font-family: 'Lora', serif;
-    font-weight: bold;
+    font-weight: 500;
     height: 100%;
 }
 .nav-bar li{
@@ -50,5 +50,6 @@ nav{
     margin-top: 3vh;
 }
 #sobre-mim{
-    border-bottom: 3px solid black
+    border-bottom: 3px solid black;
+    font-weight: 700;
 }
