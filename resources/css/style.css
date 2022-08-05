@@ -104,10 +104,44 @@ nav{
 }
 .obras{
     font-family: 'Lora', serif;
-    font-size: 4rem;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 2.5rem;
+    text-transform: uppercase;
     position: relative;
+    font-weight: bold;
     z-index: 4;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    width: fit-content;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.placa-conteudo{
+    width: 310px;
+    border: solid 2px black;
+    border-radius: 5px;
+
+}
+#cuidado{
+    background-color: black;
+    color: yellow;
+    border: solid 2px yellow;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.placa-msg{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+    padding: 5px;
+}
+.placa-msg span{
+    text-align: center;
 }
 .tec-icon{
     z-index: 2;
@@ -143,8 +177,9 @@ nav{
     color: rgb(240,82,3)
 }
 
+
 /* SOBRE MIM CONTAINER */
-.sobreMim::before {
+.sobreMim::before { /*Cria o efeito de textura por traz do container*/
     content: " ";
     background-image: url(/resources/images/textura-sobreMim.jpg);
     background-repeat: no-repeat;
