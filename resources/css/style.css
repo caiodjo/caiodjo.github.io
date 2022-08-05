@@ -26,18 +26,22 @@ a {
     text-decoration: none;
     color: black;
 }
-
+.lobster{
+    font-family: 'Lobster', cursive;
+}
 /* HEADER */
 header{
     background-color: rgb(121, 156, 124);
     display: flex;
-    height: 7.5vh;
+    height: 8vh;
     padding: 0 10%;
     align-items: center;
-    /* justify-content: space-between; */
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 100;
 }
-#titulo{
-    font-family: 'Lobster', cursive;
+.logo{
     flex: 1;
 }
 nav{
@@ -53,27 +57,106 @@ nav{
     margin-left: 2rem;
     margin-top: 3vh;
 }
-#sobre-mim{
+#nav-sobre-mim{
     border-bottom: 3px solid black;
     font-weight: 700;
 }
 #background{
+    padding-top: 8vh;
     background-color: rgb(143, 143, 143);
-}
-.container{
     display: flex;
     align-items: center;
-    width: 80vw;
-    margin: 0 auto;
-    background-color:beige;
+    flex-direction: column;
+}
+.container{
+    height: 92vh;
+    color: aliceblue;
+    background-color: rgb(49, 49, 49);
+    padding: 0 10%;
+    position: relative;
+}
+.intro:before {
+    content: " ";
+    z-index: 0;
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;   
+    height: 92vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+.intro{
+    width: 100%;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(114, 128, 114);
+    background-image: url(/resources/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.obras{
+    font-family: 'Lora', serif;
+    font-size: 4rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    position: relative;
+    z-index: 4;
+}
+.tec-icon{
+    z-index: 2;
+    font-size: 6rem;
+    color: rgb(121, 156, 124);
+    margin: 40vh 5% 0 5%;
+    opacity: 0.9;
+}
+.amarelo{
+    color: yellow;
+}
+#titulo{
+    display: inline-block;
+    margin: auto auto;
+    position: absolute;
+    right: 20%;
+    bottom: 50%;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    z-index: 4;
+}
+#js{
+    color: rgb(247,223,30);
+}
+#css3{
+    color: rgb(0,174,229);
+}
+#react{
+    color: rgb(100,218,250);
+}
+#html{
+    color: rgb(240,82,3)
+}
+
+/* SOBRE MIM CONTAINER */
+.sobreMim .text{
+    width: 100%;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.5rem;
 }
 .sobreMim{
-    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .foto-profile{
-    width: 1000px;
-    margin-left: 3rem;
+    max-width: 25rem;
 }
 .foto-profile img{
     border-radius: 50%;
+    
 }
