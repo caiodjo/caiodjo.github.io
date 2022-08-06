@@ -36,13 +36,14 @@ p{
 header{
     background-color: rgb(121, 156, 124);
     display: flex;
-    height: 8vh;
+    height: 60px;
     padding: 0 10%;
     align-items: center;
     position: fixed;
     width: 100%;
     border-bottom: 1px solid black;
     z-index: 100;
+    text-align: center;
 }
 .logo{
     flex: 1;
@@ -55,31 +56,37 @@ nav{
     font-family: 'Lora', serif;
     font-weight: 500;
     height: 100%;
+    align-items: center;
 }
 .nav-bar a{
     margin-left: 2rem;
-    margin-top: 3vh;
+    margin-top: 20px;
 }
 #nav-sobre-mim{
     border-bottom: 3px solid black;
     font-weight: 700;
 }
+@media only screen and (max-width:550px) {
+    .nav-bar a{
+        margin-top: 5px;
+    }
+}
 /* Seção da Intro */
 #background{
-    padding-top: 8vh;
+    padding-top: 60px;
     background-color: rgb(143, 143, 143);
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .container{
-    min-height: 92vh;
+    min-height: 100vh;
     color: aliceblue;
     background-color: rgb(49, 49, 49);
     padding: 0 10%;
     position: relative;
 }
-.intro:before {
+#intro:before {
     content: " ";
     z-index: 0;
     display: block;
@@ -92,15 +99,15 @@ nav{
     box-sizing: border-box;
 }
 
-.intro{
+#intro{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 60px;
     padding-bottom: 5%;
     background-color: rgb(114, 128, 114);
-    background-image: url(/resources/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+    background-image: url(../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -183,23 +190,23 @@ nav{
         font-size: 4.9rem;
     }
     #titulo{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        padding: 1rem 0;
     }
     .placa-conteudo{
         width:auto;
     }
 }
 @media only screen and (max-width:550px) {
-    .intro{
-        padding: 2rem;
+    #intro{
+        padding: 60px 2rem 2rem;
     }
-    
 }
 
 /* SOBRE MIM CONTAINER */
-.sobreMim::before { /*Cria o efeito de textura por traz do container*/
+#sobreMim::before { /*Cria o efeito de textura por traz do container*/
     content: " ";
-    background-image: url(/resources/images/textura-sobreMim.jpg);
+    background-image: url(../images/textura-sobreMim.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -210,15 +217,16 @@ nav{
     width: 100%;
     box-sizing: border-box;
     opacity: 0.1;
+    top: 0;
 }
-.sobreMim{
+#sobreMim{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0 2rem;
+    padding: 60px 0 2rem;
     flex-direction: column;
 }
-.sobreMim h2{
+#sobreMim h2{
     font-size: 4rem;
 }
 .sm-conteudo{
@@ -227,7 +235,7 @@ nav{
     justify-content: center;
     flex-wrap: wrap-reverse;
 }
-.sobreMim .text{
+#sobreMim .text{
     height: 100%;
     max-width: 60%;
     padding: 2rem;
@@ -262,7 +270,7 @@ nav{
     max-width: 300px;
 }
 @media only screen and (max-width: 1000px) {
-    .sobreMim .text{
+    #sobreMim .text{
         max-width: 80%;
     }
     .car-icon{
@@ -270,7 +278,8 @@ nav{
     }
 }
 @media only screen and (max-width: 550px) {
-    .sobreMim .text{
+
+    #sobreMim .text{
         max-width: 100%;
     }
     .foto-profile{
