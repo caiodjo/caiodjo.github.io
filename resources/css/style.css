@@ -29,9 +29,10 @@ a {
 .lobster{
     font-family: 'Lobster', cursive;
 }
-p{
-    text-indent: 2rem;
+.lora{
+    font-family: 'Lora', serif;
 }
+
 h2{
     font-size: 4rem;
 }
@@ -57,7 +58,6 @@ nav{
 }
 .nav-bar{
     display: flex;
-    font-family: 'Lora', serif;
     font-weight: 500;
     height: 100%;
     align-items: center;
@@ -230,6 +230,9 @@ nav{
     padding: 60px 0 2rem;
     flex-direction: column;
 }
+#sobreMim p{
+    text-indent: 2rem;
+}
 .sm-conteudo{
     display: flex;
     align-items: center;
@@ -305,13 +308,56 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 #contatos .text{
     position: relative;
     z-index: 4;
-    
+    text-align: center;
 }
-#github{
+#contatos .text p{
+    font-size: 2rem;
+}
+#icones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.contato{
     z-index: 4;
     position: relative;
+    margin: 2rem;
+}
+.contato img{
+    max-height: 315px;
+}
+.contato figcaption{
+    text-align: center;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .contato img{
+        max-width: 300px;
+    }
+    .contato figcaption{
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width:320px){
+    #contatos{
+        padding: 60px 10px 10px;
+    }
+    .contato{
+        margin: 0;
+    }
+    #linkedin img, #email img{
+        max-width: 290px;
+    }
+    
 }
