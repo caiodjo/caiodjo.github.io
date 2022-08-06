@@ -20,10 +20,10 @@
 
 <body>
   <header>
-    <h2 class="lobster logo"><a href="#background">CAIODJO</a></h2>
+    <a class="lobster logo" href="#background">CAIODJO</a>
     <nav class="nav-bar">
       <a id="nav-sobre-mim" href="#sobreMim">Sobre mim</a>
-      <a id="nav-contato" href="#">Contatos</a>
+      <a id="nav-contato" href="#contatos">Contatos</a>
     </nav>
   </header>
   <main id="background">
@@ -71,8 +71,24 @@
         </div>
       </div>
     </div>
-    <div class="projetos e experiencias">
-      <h2>Projetos e experiencias</h2>
+    <div id="contatos" class="container">
+      <div class="text">
+        <h2 class="">Contatos</h2>
+        <p>Entre em contato comigo atraves de alguma dessas redes</p>
+      </div>
+
+      <div id="github" class="contato-card esquerda">
+        <!-- <div class="github-card" data-github="caiodjo" data-width="400" data-height="" data-theme="default"></div> -->
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div id="linkedin" class="contato-card direita">
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+              
+      <div id="email" class="contato-card esquerda"></div>
+    </div>
+    <div id="proj-exp" class="container">
+      <h2>Projetos<br> e <br>vivencias</h2>
       <div class="item-exp">
         <div class="moldura-proj-exp">
           <img src="#" alt="logo instituto eldorado">
@@ -109,6 +125,8 @@
     </div>
   </main>
   <script src="./resources/js/script.js"></script>
+  <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+  
 </body>
 
 </html>

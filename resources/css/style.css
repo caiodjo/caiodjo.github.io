@@ -8,7 +8,7 @@ html {
     box-sizing: inherit;
 }
 
-body,h1,h2,h3,h4,h5,h6,p,ol,ul {
+body,h1,h2,h3,h4,h5,h6,p,ol,ul,a {
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -32,6 +32,9 @@ a {
 p{
     text-indent: 2rem;
 }
+h2{
+    font-size: 4rem;
+}
 /* HEADER */
 header{
     background-color: rgb(121, 156, 124);
@@ -43,13 +46,14 @@ header{
     width: 100%;
     border-bottom: 1px solid black;
     z-index: 100;
-    text-align: center;
 }
 .logo{
     flex: 1;
+    font-size: 1.5rem;
 }
 nav{
     height: 100%;
+    text-align: center;
 }
 .nav-bar{
     display: flex;
@@ -60,15 +64,15 @@ nav{
 }
 .nav-bar a{
     margin-left: 2rem;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 #nav-sobre-mim{
     border-bottom: 3px solid black;
     font-weight: 700;
 }
 @media only screen and (max-width:550px) {
-    .nav-bar a{
-        margin-top: 5px;
+    header{
+        padding: 0 10px;
     }
 }
 /* Seção da Intro */
@@ -85,6 +89,7 @@ nav{
     background-color: rgb(49, 49, 49);
     padding: 0 10%;
     position: relative;
+    width: 100%;
 }
 #intro:before {
     content: " ";
@@ -100,7 +105,6 @@ nav{
 }
 
 #intro{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,9 +230,6 @@ nav{
     padding: 60px 0 2rem;
     flex-direction: column;
 }
-#sobreMim h2{
-    font-size: 4rem;
-}
 .sm-conteudo{
     display: flex;
     align-items: center;
@@ -285,4 +286,32 @@ nav{
     .foto-profile{
         padding: 1rem
     }
+}
+/* Seção de Contatos */
+#contatos:before {
+    content: " ";
+    z-index: 0;
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;   
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+#contatos{
+    background-image: url(../images/textura-contatos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#contatos .text{
+    position: relative;
+    z-index: 4;
+    
+}
+#github{
+    z-index: 4;
+    position: relative;
 }
