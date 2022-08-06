@@ -46,7 +46,7 @@ header{
     position: fixed;
     width: 100%;
     border-bottom: 1px solid black;
-    z-index: 100;
+    z-index: 10;
 }
 .logo{
     flex: 1;
@@ -77,6 +77,40 @@ nav{
     header{
         padding: 0 10px;
     }
+}
+/* Mobile side nav */
+#mobile-nav{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+    background-color: rgb(43, 43, 43);
+    width: 80%;
+    color: aliceblue;
+    border-left: solid 1px aliceblue;
+    display: none;
+}
+#mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+#mobile-nav li, #xmark{
+    font-size: 2rem;
+    padding: 1.5rem 0 1.5rem 1rem;
+    border-top: solid 1px aliceblue;
+    border-bottom: solid 1px aliceblue;
+}
+#xmark{
+    padding: 0.75rem;
+    border-radius: 50%;
+    border: solid 1px aliceblue;
+    left: 67vw;
+    top: 1vh;
+    position: relative;
+}
+#side-sobre-mim, #side-contato, #side-projetos{
+    color: aliceblue;
 }
 /* Seção da Intro */
 #background{
@@ -380,7 +414,7 @@ nav{
     box-sizing: border-box;
 }
 #proj-exp{
-    background-image: url(../images/textura-contatos.jpg);
+    background-image: url(../images/textura-proj.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
