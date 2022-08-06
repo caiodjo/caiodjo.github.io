@@ -339,6 +339,8 @@ nav{
 .contato figcaption{
     text-align: center;
     font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 @media only screen and (max-width: 768px) {
     .contato img{
@@ -354,7 +356,7 @@ nav{
         padding: 60px 10px 10px;
     }
     .contato{
-        margin: 0;
+        margin: 1rem 0;
     }
     #linkedin img, #email img{
         max-width: 290px;
