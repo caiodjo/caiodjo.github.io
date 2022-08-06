@@ -70,6 +70,9 @@ nav{
     border-bottom: 3px solid black;
     font-weight: 700;
 }
+#menu-mobile{
+    display: none;
+}
 @media only screen and (max-width:550px) {
     header{
         padding: 0 10px;
@@ -314,7 +317,7 @@ nav{
     align-items: center;
     justify-content: space-around;
 }
-#contatos .text{
+#contatos .text, #proj-exp .text{ /*Duas seções envolvidas*/
     position: relative;
     z-index: 4;
     text-align: center;
@@ -362,4 +365,53 @@ nav{
         max-width: 290px;
     }
     
+}
+/* Seção de experiencias */
+#proj-exp:before {
+    content: " ";
+    z-index: 0;
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;   
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+#proj-exp{
+    background-image: url(../images/textura-contatos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.item{
+    position: relative;
+    text-align:justify;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.tecnologias ul{
+    display: flex;
+}
+.tecnologias li{
+    margin: 0.5rem 
+}
+@media only screen and (max-width:400px){
+    .nav-bar{
+        display: none;
+    }
+    #menu-mobile{
+        display: inline-block;
+        font-size: 2rem;
+    }
 }
