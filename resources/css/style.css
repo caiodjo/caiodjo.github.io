@@ -70,8 +70,6 @@ nav{
     border-bottom: 3px solid black;
     font-weight: 700;
 } 
-.tab:active{
-}
 .active{
     border-bottom: 3px solid black;
     font-weight: 700;
@@ -110,7 +108,7 @@ nav{
     padding: 0.75rem;
     border-radius: 50%;
     border: solid 1px aliceblue;
-    left: 67vw;
+    left: 65vw;
     top: 1vh;
     position: relative;
 }
